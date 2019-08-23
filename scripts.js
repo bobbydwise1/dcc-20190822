@@ -12,6 +12,23 @@ Given the list of flights [('SFO', 'COM'), ('COM', 'YYZ')] and starting airport 
 Given the list of flights [('A', 'B'), ('A', 'C'), ('B', 'C'), ('C', 'A')] and starting airport 'A', you should return the list ['A', 'B', 'C', 'A', 'C'] even though ['A', 'C', 'A', 'B', 'C'] is also a valid itinerary. However, the first one is lexicographically smaller.
 */
 
+class Flight {
+  constructor(origin=null,destination=null) {
+    this.origin=origin;
+    this.destination=destination;
+  }
+}
+
+
+
+const leg1 = new Flight('SFO', 'HKO')
+const leg2 = new Flight('YYZ', 'SFO')
+const leg3 = new Flight('YUL', 'YYZ')
+const leg4 = new Flight('HKO', 'ORD')
+const iten1 = [leg1,leg2,leg3,leg4]
+
+
+
 $(document).ready(function() {
   $('#button1').click(function(){
     value1 = $('#input1-section-1').value();
