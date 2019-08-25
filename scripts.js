@@ -19,7 +19,14 @@ class Flight {
   }
 }
 
+const makeRoute = (yourArrayOfObjs) => {
+  let output = [];
+  let temp;
+  for (i = 0; i< yourArrayOfObjs.length; i++) {
 
+
+  }
+}
 
 const leg1 = new Flight('SFO', 'HKO')
 const leg2 = new Flight('YYZ', 'SFO')
